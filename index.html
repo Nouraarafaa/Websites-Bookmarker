@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="icon/bookmark.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&family=PT+Sans+Caption&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Bookmarker</title>
+</head>
+<body>
+  <h2>Bookmarker</h2>
+  <div class="border"></div>
+  <div class="title">
+    <i class="fa-solid fa-bookmark"></i>
+    <h3>Bookmark your favorite sites</h3>
+    <i class="fa-solid fa-bookmark"></i>
+  </div>
+  <div class="data-entry">
+
+    <label for="Name">
+      <i class="fa-regular fa-bookmark"></i>
+      Site Name
+    </label>
+    <input type="text" placeholder="Bookmark Name" name="name" id="Name">
+    <br>
+    <label for="Url">
+      <i class="fa-solid fa-link"></i>
+      Site URL
+    </label>
+    <input type="url" placeholder="Website URL" name="url" id="Url">
+
+    <button type="submit" id="submit">Submit</button>
+  </div>
+  <div class="border"></div>
+  <div class="output">
+    <table>
+    <thead>
+      <tr>
+        <th>index</th>
+        <th>Website Name</th>
+        <th>Visit</th>
+        <th>Delete</th>
+      </tr>
+      </thead>
+      <tbody id="tbody">
+
+      </tbody>
+    </table>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
